@@ -413,50 +413,73 @@
             <th>
                 <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
                 
-                <p><code>docker run -d --name test1 -p 8001:80 eboraas/apachephp</code></p>
+                '''
+                docker run -d --name test1 -p 8001:80 eboraas/apachephp
+                '''
                 
             </th>
         </tr>
         <tr>
             <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/2.png" alt="EPIS" style="width:50%; height:auto"/></th>
             <th>
-                <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
+                <span style="font-weight:bold;">Ingresamos al contenedor e instalamos las herramientas necesarias para la tarea a realizar</span><br />
+                '''
+                docker exec -it 4d38f4dfdc64 sh
+                apt-get update
+                apt-get install inetutils-ping
+                ping 8.8.8.8
+                '''
             </th>
         </tr>
         <tr>
             <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/3.png" alt="EPIS" style="width:50%; height:auto"/></th>
             <th>
-                <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
+                <span style="font-weight:bold;">Se confirma que no existe conexion alguna entre nuestro contenedores.</span><br />
+                '''
+                ping test2
+                '''
             </th>
         </tr>
         <tr>
             <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/4.png" alt="EPIS" style="width:50%; height:auto"/></th>
             <th>
-                <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
+                <span style="font-weight:bold;">Creamos la nueva red para poder realizar la conexion y se lista las redes disponibles.</span><br />
+                '''
+                docker network create newNetwork
+                docker network ls
+                '''
             </th>
         </tr>
         <tr>
             <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/5.png" alt="EPIS" style="width:50%; height:auto"/></th>
             <th>
-                <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
+                <span style="font-weight:bold;">Se conecta ambos contenedores a la nueva red creada.</span><br />
+                '''
+                docker network connect newNetwork test1
+                docker network connect newNetwork test2
+                '''
             </th>
         </tr>
         <tr>
-            <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/6.png" alt="EPIS" style="width:50%; height:auto"/></th>
             <th>
-                <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
+                <img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/6.png" alt="EPIS" style="width:50%; height:auto"/>
+                <img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/7.png" alt="EPIS" style="width:50%; height:auto"/>
             </th>
-        </tr>
-        <tr>
-            <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/7.png" alt="EPIS" style="width:50%; height:auto"/></th>
             <th>
-                <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
+                <span style="font-weight:bold;">Verificamos que la conexion a la nueva red se haya realizado de parte de los dos contenedores.</span><br />
+                '''
+                docker network inspect newNetwork
+                '''
             </th>
         </tr>
         <tr>
             <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/8.png" alt="EPIS" style="width:50%; height:auto"/></th>
             <th>
-                <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
+                <span style="font-weight:bold;">Realizamos ping desde nuestro contenedor llamado test1 hacia nuestro otro conteneder test2.</span><br />
+                '''
+                docker exec -it 4d38f4dfdc64 sh
+                ping test2
+                '''
             </th>
         </tr>
     </theader>
@@ -464,7 +487,7 @@
 </div>
         
 -   3. Investigar acerca de la ejecución de programas con interfaz gráfica dentro de contenedores Docker.
-
+    Se realiza mediante el levantamiento de un servicio web, por el cual se va ejecutando los programas o las aplicaciones a utilizar, esto se puede dar gracias a Docker-Compose.
 #
 
 ## CUESTIONARIO
