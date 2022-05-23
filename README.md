@@ -412,9 +412,9 @@
             <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/1.png" alt="EPIS" style="width:50%; height:auto"/></th>
             <th>
                 <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
-                ```
-                docker run -d --name test1 -p 8001:80 eboraas/apachephp
-                ```
+                
+                <p><code>docker run -d --name test1 -p 8001:80 eboraas/apachephp</code></p>
+                
             </th>
         </tr>
         <tr>
