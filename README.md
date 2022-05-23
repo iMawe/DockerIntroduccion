@@ -46,6 +46,12 @@
     </ul>
 </td>
 </<tr>
+<tr><td colspan="2">ALUMNO:
+<ul>
+    <li>Walther Medina Pauca - wmedinap@ualsalle.edu.pe</li>
+</ul>
+</td>
+</<tr>
 </tdbody>
 </table>
 
@@ -486,7 +492,7 @@
 </div>
         
 -   3. Investigar acerca de la ejecución de programas con interfaz gráfica dentro de contenedores Docker.
-    Se realiza mediante el levantamiento de un servicio web, por el cual se va ejecutando los programas o las aplicaciones a utilizar, esto se puede dar gracias a Docker-Compose.
+    -   Se realiza mediante el levantamiento de un servicio web, por el cual se va ejecutando los programas o las aplicaciones a utilizar, esto se puede dar gracias a Docker-Compose.
 #
 
 ## CUESTIONARIO
