@@ -498,10 +498,10 @@
 ## CUESTIONARIO
 
 - ¿Qué son los "cgroups" del kernel de Linux? y ¿Qué diferencia más interesante encontró entre las versiones 1 y 2?
-    Su objetivo es rastrear, agrupar y organizar los procesos que se ejecutan. Cada proceso se rastrea con cgroups, independientemente de si esta en un contenedor o no, los cgroups generalmente se usan apra asociar procesos con recursos con un cgroups que puede rastrear, cuantos de un grupo de procesos usa para un tipo dado de recurso. Tambien dan la capacidad de limitar o priorizar que recursos estan disponibles para un grupo de procesos. La diferencia mas importante entre las dos unicas versiones de cgroups es que en la v2 cambió el enfoque de jerarquía múltiple en una jerarquía unificada y montó todos los controladores en una jerarquía unificada.
+    -   Su objetivo es rastrear, agrupar y organizar los procesos que se ejecutan. Cada proceso se rastrea con cgroups, independientemente de si esta en un contenedor o no, los cgroups generalmente se usan apra asociar procesos con recursos con un cgroups que puede rastrear, cuantos de un grupo de procesos usa para un tipo dado de recurso. Tambien dan la capacidad de limitar o priorizar que recursos estan disponibles para un grupo de procesos. La diferencia mas importante entre las dos unicas versiones de cgroups es que en la v2 cambió el enfoque de jerarquía múltiple en una jerarquía unificada y montó todos los controladores en una jerarquía unificada.
     
 - ¿Qué son los "namespaces" del kernel de Linux? y ¿Cuáles son los tipos de "namespaces"?
-    Se ocupan de controlar la visibilidad de los recursos y los namespaces de control del acceso pueden hacer que parezca al proceso que tiene su propia copia aislada de un recurso determinado. En otras palabras, lo namespaces pueden asignar recursos fuera de un espacio de nombres a un recurso dentro de un espacio de nombres mientras cambia.
+    -   Se ocupan de controlar la visibilidad de los recursos y los namespaces de control del acceso pueden hacer que parezca al proceso que tiene su propia copia aislada de un recurso determinado. En otras palabras, lo namespaces pueden asignar recursos fuera de un espacio de nombres a un recurso dentro de un espacio de nombres mientras cambia.
     - Mount (mnt). Este namespace controla los puntos de montaje, proporcionando aislamiento a la lista de puntos de montaje que están disponibles para los procesos de un namespace.
     - Process ID (pid). Este namepsace controla y aisla el espacio de números de procesos, lo cual permite que diferentes procesos, en diferentes namespaces, tengan el mismo PID.
     - Network (net). Mediante este namespace, un conjunto de procesos tendrá sus propios recursos de red, incluyendo dispositivos de red, tabla de rutas, protocolos IPv4 e IPv6, firewall, etc.
@@ -511,12 +511,12 @@
     - Control groups (cgroup). Este namespace permite aislar grupos de control de tal manera que un proceso tenga una jerarquía de grupo de procesos aislada del resto.
     - Time. Este namespace proporciona vistas de los relojes del sistema CLOCK_MONOTONIC y CLOCK_BOOTTIME, lo cual permite que los procesos de un namespace tengan diferente fecha y hora que los de otros namespaces.
 - ¿Qué diferencia puede resaltar entre LXC y libcontainer?
-    libcontainer fue desarrollada para acceder directamente a las APIs de contenedores del kernel para eliminar dependencias. Con libcontainer, Docker puede manipular espacios de nombres, grupos de control, capacidades, perfiles de apparmor, interfaces de red y reglas de cortafuegos sin depender de LXC y otros paquetes externos. La reducción de las dependencias hace que libcontainer sea más estable y eficiente. Libcontainer también permite una mayor reutilización y es más fácil de adoptar por otros proveedores en comparación con LXC.
+    -   libcontainer fue desarrollada para acceder directamente a las APIs de contenedores del kernel para eliminar dependencias. Con libcontainer, Docker puede manipular espacios de nombres, grupos de control, capacidades, perfiles de apparmor, interfaces de red y reglas de cortafuegos sin depender de LXC y otros paquetes externos. La reducción de las dependencias hace que libcontainer sea más estable y eficiente. Libcontainer también permite una mayor reutilización y es más fácil de adoptar por otros proveedores en comparación con LXC.
     
 - Investigue acerca del malware Doki y explique brevemente.
-    Ha sido diseñado para ejecutar comandos recibidos de sus operadores., utiliza un explorador de bloques de criptomonedas Dogecoin para generar su dominio C2 en tiempo real dinámicamente, usa la biblioteca embedTLS para funciones criptográficas y comunicación de red, crea URLs únicas con una vida útil corta y las usa para la descarga de payloads durante el ataque.
+    -   Ha sido diseñado para ejecutar comandos recibidos de sus operadores., utiliza un explorador de bloques de criptomonedas Dogecoin para generar su dominio C2 en tiempo real dinámicamente, usa la biblioteca embedTLS para funciones criptográficas y comunicación de red, crea URLs únicas con una vida útil corta y las usa para la descarga de payloads durante el ataque.
 - ¿Hasta que punto la empresa RedHat se ha comprometido con el proyecto Docker?
-    La empresa RedHat junto a Docker Inc. estan en el desarrollo del proyecto Docker, por parte de RedHat se encarga de desarrollar y mantener distintas herramientas que permiten el levantamiento del proyecto para beneficiar a los usuarios.
+    -   La empresa RedHat junto a Docker Inc. estan en el desarrollo del proyecto Docker, por parte de RedHat se encarga de desarrollar y mantener distintas herramientas que permiten el levantamiento del proyecto para beneficiar a los usuarios.
 #
 
 ## REFERENCIAS
