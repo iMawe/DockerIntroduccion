@@ -405,7 +405,25 @@
     docker run -p 8088:80 rcd22image
     ```
 -   2. Crear dos contenedores que puedan comunicarse: ping.
-     <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/1.png" alt="EPIS" style="width:50%; height:auto"/></th>
+<div align="center">
+    <table>
+    <theader>
+        <tr>
+            <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/1.png" alt="EPIS" style="width:50%; height:auto"/></th>
+            <th>
+                <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
+            </th>
+        </tr>
+    </theader>
+</table>
+</div>
+    # -   Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.
+        
+    ## <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/2.png" alt="EPIS" style="width:50%; height:auto"/></th>
+                        
+
+   # -   
+        
 -   3. Investigar acerca de la ejecución de programas con interfaz gráfica dentro de contenedores Docker.
 
 #
