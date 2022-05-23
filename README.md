@@ -406,29 +406,27 @@
     ```
 -   2. Crear dos contenedores que puedan comunicarse: ping.
 <div align="center">
-    <table>
+<table>
     <theader>
         <tr>
             <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/1.png" alt="EPIS" style="width:50%; height:auto"/></th>
             <th>
                 <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
-                
                 '''
                 docker run -d --name test1 -p 8001:80 eboraas/apachephp
                 '''
-                
             </th>
         </tr>
         <tr>
             <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/2.png" alt="EPIS" style="width:50%; height:auto"/></th>
             <th>
                 <span style="font-weight:bold;">Ingresamos al contenedor e instalamos las herramientas necesarias para la tarea a realizar</span><br />
-                '''
+                <span style="font-weight:bold;">
                 docker exec -it 4d38f4dfdc64 sh
                 apt-get update
                 apt-get install inetutils-ping
                 ping 8.8.8.8
-                '''
+                </span><br />
             </th>
         </tr>
         <tr>
