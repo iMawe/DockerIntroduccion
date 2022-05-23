@@ -414,10 +414,52 @@
                 <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
             </th>
         </tr>
+        <tr>
+            <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/2.png" alt="EPIS" style="width:50%; height:auto"/></th>
+            <th>
+                <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
+            </th>
+        </tr>
+        <tr>
+            <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/3.png" alt="EPIS" style="width:50%; height:auto"/></th>
+            <th>
+                <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
+            </th>
+        </tr>
+        <tr>
+            <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/4.png" alt="EPIS" style="width:50%; height:auto"/></th>
+            <th>
+                <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
+            </th>
+        </tr>
+        <tr>
+            <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/5.png" alt="EPIS" style="width:50%; height:auto"/></th>
+            <th>
+                <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
+            </th>
+        </tr>
+        <tr>
+            <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/6.png" alt="EPIS" style="width:50%; height:auto"/></th>
+            <th>
+                <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
+            </th>
+        </tr>
+        <tr>
+            <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/7.png" alt="EPIS" style="width:50%; height:auto"/></th>
+            <th>
+                <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
+            </th>
+        </tr>
+        <tr>
+            <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/8.png" alt="EPIS" style="width:50%; height:auto"/></th>
+            <th>
+                <span style="font-weight:bold;">Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.</span><br />
+            </th>
+        </tr>
     </theader>
 </table>
 </div>
-    # -   Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.
+    -   Se realiza la creacion de los contenedores a utilizar para realizar ping entre ellos.
         
     ## <th><img src="https://github.com/iMawe/DockerIntroduccion/blob/main/images/2.png" alt="EPIS" style="width:50%; height:auto"/></th>
                         
